@@ -26,17 +26,10 @@ function tabChange(event){
   let target_tab = document.querySelectorAll("#"+target.dataset['id'])
   let tab_array = [document.querySelector("#tab1"),  document.querySelector("#tab2")]
 
-
   // toogle 顏色
   if (!target.classList.contains("trigger")){
     li_array.forEach(p=>p.classList.toggle("trigger"))
   }
   // 轉換 tab
   tab_array.forEach(p=>p.classList.toggle("hidden"))
-}
-
-function tabMenuInfo(event){
-
-  let target = event.target
-
 }

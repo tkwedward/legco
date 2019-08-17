@@ -3,6 +3,7 @@
 // 3. motionDetail: 在Quesiton part 按議題時，彈出 result box，然後 show 出資料
 
 function questionBoxAddClick(){
+   // questionBoxAddClick(): 在按 box 時，會出現 toogle 某個被按的圖 on or off
   $(".box_1, .box_2, .box_3, .box_4, .box_5").on("click", e=>{
     e.stopPropagation();
     let target = e.target;                 // 被選中的 element

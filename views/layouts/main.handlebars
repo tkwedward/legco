@@ -16,8 +16,8 @@
 
   <div class="fb-like" data-href="https://wknews.org/legislative_election/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 		<ul class="tabs">
-			<li class="trigger" data-id="tab1" onclick="tabChange(event)"><a><img src="pictures/question.png">問題</a></li>
-			<li data-id="tab2" onclick="tabChange(event)"><a><img src="pictures/head.gif">議員</a></li>
+			<li class="trigger menuTab1" data-id="tab1" onclick="tabChange(event)"><a><img src="pictures/question.png">問題</a></li>
+			<li class="menuTab2" data-id="tab2" onclick="tabChange(event)"><a><img src="pictures/head.gif">議員</a></li>
 
 		</ul>
 
@@ -37,10 +37,16 @@
 <!-- {{>memberBox}} -->
 </body>
 
-
+<script src="js/tabMemberPopUpBox.js"></script>
 <script src="js/menuInfo.js"></script>
 <script src="js/interactive.js"></script>
 <script src="js/boxTrigger.js"></script>
+
+<script >
+document.querySelector(".menuTab2").click()
+document.querySelector(".dropdown-content2 a").click()
+
+</script>
 
 <style>
 

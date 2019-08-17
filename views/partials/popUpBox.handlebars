@@ -25,64 +25,48 @@
 
 
 <script>
-let data_array = getData("rent", TAG_URL)
-let data = data_array[4]
+// let data_array = getData("rent", TAG_URL)
+// let data = data_array[4]
+//
+// // 在 body 中加入東西
+// $(".motion_name").html(data["motion_name"])
+// $(".date").html(data["date"])
+// $(".note").html(data["note"])
+//
+//
+// // 將每個 party 的資料放入 party_box 中
+// PARTY_ARRAY.forEach(p=>{
+//   let party_box = document.createElement("div")
+//   party_box.classList.add("party_box", p)
+//   $(party_box).append(`<br> ${p} : <br>`)
+//   createPartyList(p, party_box)
+//   // let node = document.createTextNode(p)
+//   // party_box.appendChild(node)
+// })
+//
+// // container: 為要放政黨資料的 box
+// function createPartyList(party_name, container){
+//   let party =  data["parties"][party_name]
+//   let choices = ["贊成", "反對", "棄權", "出席", "缺席"]
+//   let party_length = 0;
+//   $(".party_body").append(container)
+//   choices.forEach(p=>{
+//     if (party[p]) {
+//         let party_choice_box = document.createElement("div")
+//         party_choice_box.classList.add(party_name, p)
+//         party_choice_box = $(party_choice_box)
+//         party_choice_box.append(`${p} (${party[p].length}):<br>`)
+//         $(container).append(party_choice_box) // 在 result box 中的 party_body 中 append 資料
+//
+//         party_length+= `${party[p].length}`;
+//         console.log(party[p].length);
+//         loopEachMember(party[p], party_choice_box)
+//     } //if
+//
+//   }) // forEach
+// }
 
-// 在 body 中加入東西
-$(".motion_name").html(data["motion_name"])
-$(".date").html(data["date"])
-$(".note").html(data["note"])
 
-
-// 將每個 party 的資料放入 party_box 中
-PARTY_ARRAY.forEach(p=>{
-  let party_box = document.createElement("div")
-  party_box.classList.add("party_box", p)
-  $(party_box).append(`<br> ${p} : <br>`)
-  createPartyList(p, party_box)
-  // let node = document.createTextNode(p)
-  // party_box.appendChild(node)
-})
-
-// container: 為要放政黨資料的 box
-function createPartyList(party_name, container){
-  let party =  data["parties"][party_name]
-  let choices = ["贊成", "反對", "棄權", "出席", "缺席"]
-  let party_length = 0;
-  $(".party_body").append(container)
-  choices.forEach(p=>{
-    if (party[p]) {
-        let party_choice_box = document.createElement("div")
-        party_choice_box.classList.add(party_name, p)
-        party_choice_box = $(party_choice_box)
-        party_choice_box.append(`${p} (${party[p].length}):<br>`)
-        $(container).append(party_choice_box) // 在 result box 中的 party_body 中 append 資料
-
-        party_length+= `${party[p].length}`;
-        console.log(party[p].length);
-        loopChoice(party[p], party_choice_box)
-    } //if
-
-  }) // forEach
-}
-
-// loop 每個 list 中的 member
-function loopChoice(list, container){
-  list.forEach(m=>{
-    let figure = document.createElement("figure");
-    let figcaption = document.createElement("figcaption");
-    figcaption.innerHTML = m;
-
-    let img = document.createElement("img")
-    img.src = "pictures/member/5th/"+m+".jpg"
-    img.style.width = "90px"
-
-    $(figure).append(img)
-    $(figure).append(figcaption)
-
-    $(container).append(figure)
-  })// for Each
-}
 
 
 </script>
