@@ -1,0 +1,17 @@
+._result_box {
+  background: gold;
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  ._result_box ._result_box_in {
+    background: grey;
+    width: 85%;
+    height: 80%;
+    position: relative; }
+
+.party_box figure {
+  display: inline-block; }
+
+/*# sourceMappingURL=result_box.css.map */

@@ -1,0 +1,534 @@
+@charset "UTF-8";
+html {
+  width: 100%; }
+
+title {
+  display: block;
+  font-size: 20px; }
+
+body {
+  font-size: 35px;
+  background-color: #b9d2ce;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+
+img {
+  height: 120px;
+  width: auto;
+  margin-top: 10px; }
+
+.top_of_page {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px; }
+  .top_of_page .logo img {
+    height: 90px;
+    width: auto;
+    float: left;
+    clear: left;
+    padding-right: 20px;
+    margin-top: 20px; }
+  .top_of_page .heading {
+    font-size: 60px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    clear: right; }
+    .top_of_page .heading .line1, .top_of_page .heading .line2 {
+      font-size: 1.5em;
+      text-align: center; }
+    .top_of_page .heading .line2 {
+      font-size: 0.5em; }
+  @media (max-width: 1100px) {
+    .top_of_page .heading .line1 {
+      font-size: 1.0em; } }
+  .top_of_page .intro {
+    clear: both;
+    position: relative;
+    top: 20px;
+    font-size: 18px; }
+
+.tabs {
+  font-size: 29.5px;
+  width: 100%;
+  height: 50px;
+  display: inline-block; }
+  .tabs li.trigger {
+    background: yellow; }
+  .tabs li * {
+    pointer-events: none; }
+  .tabs a {
+    color: black; }
+  .tabs img {
+    width: 30px;
+    height: auto;
+    padding-right: 10px;
+    position: relative;
+    top: 3px; }
+
+/*----- Tab Links -----*/
+/* Clearfix */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.abgne_tab {
+  clear: left;
+  width: 100%;
+  margin: 5px 0; }
+
+ul.tabs {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 46px;
+  margin-bottom: 10px; }
+
+ul.tabs li {
+  float: left;
+  height: 55px;
+  line-height: 31px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -1px;
+  /* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+  border-left: none;
+  background: white; }
+
+ul.tabs li a {
+  padding: 0 20px;
+  text-decoration: none; }
+
+ul.tabs li.active {
+  background: #4CAF50;
+  height: 55px; }
+
+ul.tabs li.active a:hover {
+  background: #4CAF50; }
+
+.tab_container {
+  clear: left;
+  width: 90%;
+  border: 6px solid #999;
+  border-radius: 20px;
+  background: white;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+  .tab_container hr {
+    clear: left;
+    position: relative;
+    top: 10px;
+    width: 100%; }
+  .tab_container .tab_content {
+    padding: 20px; }
+    .tab_container .tab_content h2 {
+      margin: 0 0 20px; }
+
+#tab2 {
+  height: 760px; }
+
+.hidden {
+  display: none; }
+
+/*----- Content of Tabs -----*/
+.tab-content {
+  padding-top: 10px;
+  clear: both;
+  border-radius: 3px; }
+
+.tab {
+  display: none; }
+
+.tab.active {
+  display: block; }
+
+.fb_iframe_widget {
+  position: absolute;
+  right: -8%;
+  float: right; }
+
+.flip3D {
+  width: 92%;
+  position: absolute;
+  height: 620px;
+  margin: 10px;
+  float: left;
+  overflow: hidden; }
+
+.flip3D > .front {
+  position: absolute;
+  background: #d6f6fd;
+  width: 75%;
+  height: 620px;
+  margin-left: 31px;
+  margin-top: -23px; }
+
+.popUpBox {
+  display: default; }
+  .popUpBox .hidden {
+    display: none; }
+
+.first, .second, .third, .forth, .fifth {
+  box-shadow: -5px 5px 5px #888888;
+  border-radius: 8px;
+  text-align: center;
+  width: 100px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+  border: solid 1px; }
+
+.individual {
+  height: 650px;
+  width: 100%;
+  background-color: white;
+  margin-top: 10;
+  clear: left;
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
+  /* Links inside the dropdown */
+  /* Change color of dropdown links on hover */
+  /* Show the dropdown menu on hover */
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
+  /* Links inside the dropdown */
+  /* Change color of dropdown links on hover */
+  /* Show the dropdown menu on hover */
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
+  /* Links inside the dropdown */
+  /* Change color of dropdown links on hover */
+  /* Show the dropdown menu on hover */
+  /* Change the background color of the dropdown button when the dropdown content is shown */ }
+  .individual .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 41px;
+    box-shadow: 10px 10px 5px #888888; }
+  .individual .btn {
+    margin-top: 20px; }
+  .individual .dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 15px; }
+  .individual .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 41px;
+    z-index: 1000; }
+  .individual .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; }
+  .individual .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+  .individual .dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 10; }
+  .individual .dropdown:hover .dropbtn {
+    background-color: #3e8e41; }
+  .individual .dropbtn2 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    box-shadow: 10px 10px 5px #888888; }
+  .individual .dropdown2 {
+    position: relative;
+    display: inline-block; }
+  .individual .dropdown-content2 {
+    width: 500px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    z-index: 1000; }
+  .individual .dropdown-content2 a {
+    width: 90px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    float: left;
+    z-index: 3; }
+  .individual .dropdown-content2 a:hover {
+    background-color: #f1f1f1; }
+  .individual .dropdown2:hover .dropdown-content2 {
+    display: block;
+    z-index: 1; }
+  .individual .dropdown2:hover .dropbtn2 {
+    background-color: #3e8e41; }
+  .individual .dropbtn3 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    box-shadow: 10px 10px 5px #888888;
+    height: 56px; }
+  .individual .dropdown3 {
+    position: relative;
+    display: inline-block; }
+  .individual .dropdown-content3 {
+    width: 500px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    z-index: 1000; }
+  .individual .dropdown-content3 a {
+    width: 90px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    float: left;
+    z-index: 3; }
+  .individual .dropdown-content3 a:hover {
+    background-color: #f1f1f1; }
+  .individual .dropdown3:hover .dropdown-content3 {
+    display: block;
+    z-index: 1; }
+  .individual .dropdown3:hover .dropbtn3 {
+    background-color: #3e8e41; }
+  .individual .member_party {
+    clear: both;
+    margin-left: 40px;
+    padding-top: 10px; }
+    .individual .member_party .individual_party {
+      box-shadow: -5px 5px 5px #888888;
+      background-color: white;
+      border-radius: 8px;
+      text-align: center;
+      width: 100px;
+      float: left;
+      margin-left: 10px;
+      margin-top: 5px;
+      font-size: 15px;
+      border: solid 1px; }
+  .individual .member_name_shell {
+    overflow: hidden;
+    height: 120%;
+    width: 100%;
+    margin-top: 40px; }
+    .individual .member_name_shell .info {
+      font-size: 12px;
+      color: red; }
+    .individual .member_name_shell .member_name {
+      clear: both;
+      height: 185px;
+      text-align: center;
+      font-size: 20px;
+      position: relative; }
+      .individual .member_name_shell .member_name .circles {
+        height: 120px;
+        z-index: 10;
+        float: left; }
+      .individual .member_name_shell .member_name .block {
+        width: 100px;
+        height: 160px;
+        float: left;
+        margin: 0px 10px;
+        display: inline-block; }
+        .individual .member_name_shell .member_name .block .opacity {
+          opacity: 1; }
+        .individual .member_name_shell .member_name .block .transparent {
+          opacity: 0.2; }
+        .individual .member_name_shell .member_name .block .member_picture {
+          transition: 1s; }
+          .individual .member_name_shell .member_name .block .member_picture img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 60%;
+            width: 80px;
+            height: auto; }
+        .individual .member_name_shell .member_name .block .individual_name {
+          width: 110px;
+          float: left;
+          margin-left: -8px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          padding-left: 4px;
+          text-align: center;
+          transition: 1s; }
+  .individual .member_detail {
+    float: left;
+    width: 92%;
+    margin: 0px 32px;
+    font-size: 15px; }
+    .individual .member_detail .table_headline th {
+      width: 100px; }
+    .individual .member_detail .table_headline th:nth-child(1) {
+      width: 400px;
+      height: 70px; }
+    .individual .member_detail .shut_up_circle {
+      background: red;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      margin: 0px auto; }
+    .individual .member_detail table {
+      margin-left: auto;
+      margin-right: auto; }
+    .individual .member_detail .position {
+      overflow-y: scroll;
+      height: 400px; }
+      .individual .member_detail .position td {
+        width: 100px; }
+      .individual .member_detail .position td:nth-child(1) {
+        width: 400px;
+        height: 90px; }
+  .individual .member_others {
+    clear: both;
+    padding-top: 30px; }
+
+.question_part {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .question_part .trigger {
+    background-color: yellow !important; }
+  .question_part .box {
+    float: left;
+    background-color: #cabaa1;
+    border: solid;
+    font-size: 18px;
+    text-align: center;
+    width: 190px;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px #888888; }
+  .question_part .box * {
+    pointer-events: none; }
+
+.jazz {
+  width: 29%;
+  position: relative;
+  min-height: 130px;
+  padding: 10px 10px;
+  float: left;
+  font-size: 17px;
+  background: #cabaa1;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #888888;
+  margin: 10px 8px 15px 8px; }
+  .jazz .keywords {
+    position: absolute;
+    font-size: 16px;
+    color: red;
+    left: 12px;
+    bottom: 10px; }
+
+#result {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.q5 {
+  display: none; }
+
+.q1_result, .q2_result, .q3_result, .q4_result, .q5_result {
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 40px; }
+
+/*images*/
+/*the four choices in the list*/
+.yes, .no, .absent, .abstain {
+  width: 1000px;
+  background-color: #ede9e0; }
+
+.unit {
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px; }
+
+.yes_name, .no_name, .absent_name, .abstain_name, .parties {
+  float: left;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100px; }
+
+.black_image {
+  width: 150px;
+  height: auto; }
+
+.yes img, .no img, .absent img, .abstain img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: auto;
+  border-radius: 60%; }
+
+.parties {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100px; }
+
+.back_to_top {
+  width: 100%; }
+
+.back_to_top button {
+  display: block;
+  margin: 10px auto;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px; }
+
+.adv a {
+  text-decoration: none; }
+.adv .title {
+  font-size: 25px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto; }
+.adv .image {
+  width: 1053px;
+  margin-left: auto;
+  margin-right: auto; }
+.adv img {
+  height: 100px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 10px; }
+@media (max-width: 1100px) {
+  .adv img {
+    height: 90px; } }
+
+/*# sourceMappingURL=theme1.css.map */

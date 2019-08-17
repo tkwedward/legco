@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>立法會</title>
+  <link rel="stylesheet" type="text/css" href="css/theme1.css">
+  <link rel="stylesheet" type="text/css" href="css/result_box.css">
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/constant.js"></script>
+  <script src="js/function.js"></script>
+</head>
+
+<body>
+  {{>facebook}}
+  {{>static/top_text}}
+<!-- 最上面的 tab -->
+
+  <div class="fb-like" data-href="https://wknews.org/legislative_election/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+		<ul class="tabs">
+			<li class="trigger" data-id="tab1" onclick="tabChange(event)"><a><img src="pictures/question.png">問題</a></li>
+			<li data-id="tab2" onclick="tabChange(event)"><a><img src="pictures/head.gif">議員</a></li>
+
+		</ul>
+
+<!-- <div class="testing1">safsaf</div> -->
+
+<!-- tab 的部份 -->
+  {{>tab1}}
+  {{>tab2}}
+
+<hr>
+
+<!-- 廣告部份 -->
+{{>static/adv}}
+
+
+<!-- {!{>popUpBox}} -->
+<!-- {{>memberBox}} -->
+</body>
+
+
+<script src="js/menuInfo.js"></script>
+<script src="js/interactive.js"></script>
+<script src="js/boxTrigger.js"></script>
+
+<style>
+
+</style>
+
+</html>

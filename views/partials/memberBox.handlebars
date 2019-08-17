@@ -1,0 +1,39 @@
+<div class="member_popUpBox hidden">
+  <div class="choice_table">
+sdfsdfs
+  </div>
+</div>
+
+
+<script>
+let data_array = getData(MEMBER_MAPPING["梁國雄"], MEMBER_URL)
+let data = data_array[4]
+
+// render 每一條 information
+function motionLine(p){
+  let motion_name =  document.createElement("div")
+  let date =  document.createElement("div")
+  let note =  document.createElement("div")
+  let decision =  document.createElement("div")
+
+  motion_name.classList.add("member_motion_name")
+  date.classList.add("date")
+  note.classList.add("note")
+  decision.classList.add("decision")
+
+  $(".choice_table").append(motion_name)
+  $(".choice_table").append(date)
+  $(".choice_table").append(note)
+  $(".choice_table").append(decision)
+
+  $(motion_name).html("議案: " + p["motion_name"])
+  $(date).html("日期︰ " + p["date"])
+  $(note).html("備註: " + p["note"])
+  $(decision).html("投票記錄: " + p["decision"])
+}
+
+// 將每個 party 的資料放入 party_box 中
+data_array.forEach(p=>{
+  motionLine(p)
+})
+</script>
